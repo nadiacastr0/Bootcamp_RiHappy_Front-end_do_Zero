@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário de Propriedades de Fundo em CSS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:slateblue;
+        }
+        .property {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 500px;
+            width: 400px;
+            overflow: auto;
+        }
+        .bg-color {
+            background-color: lightblue;             
+            height: 100px;
+        }
+        .bg-image {
+            background-image: url('image.jpg'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-attachment: local; /*-------*/
+        }
+        .bg-repeat {
+            background-image: url('image.jpg');
+            background-repeat: repeat-y;
+            background-attachment: scroll;
+        }
+        .bg-position {
+            background-image: url('image.jpg'); 
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        .bg-size {
+            background-image: url('image.jpg'); 
+            background-size: cover;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+        .bg-origin{            
+            height: 500px;
+            width: 400px;
+            background-image: url('image.jpg'); 
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;/*--Alterar aqui!--*/
+            border: 10px dashed #623ed7;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .bg-clip{
+            font-size: 50px;
+            font-weight: bold;
+            color: transparent; /* Torna o texto transparente */
+            background-image: url('image2.jpg');
+            -webkit-background-clip: text; /* Clip para WebKit (Chrome, Safari) */
+            background-clip: text; /* Clip para outros navegadores */
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 200px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="property bg-color">
+        <h3>background-color: </h3>
+        <p>Define a cor de fundo de um elemento.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima alias numquam ratione error aspernatur, corporis obcaecati neque molestias, tempore, quo nemo? Totam asperiores dolorem culpa quaerat cupiditate, rerum ut quis!</p>
+    </div>
+    <div class="property bg-image">
+        <h3>background-image: </h3>
+        <p>Define uma imagem como fundo de um elemento.</p>
+    </div>
+    <div class="property bg-repeat">
+        <h3>background-repeat: </h3>
+        <p>Controla como a imagem de fundo se repete.</p>
+    </div>
+    <div class="property bg-position">
+        <h3>background-position: </h3>
+        <p>Define a posição da imagem de fundo.</p>
+    </div>
+    <div class="property bg-size">
+        <h3>background-size: </h3>
+        <p>Controla o tamanho da imagem de fundo.</p>
+    </div>
+    <div class="bg-origin">
+        <h3>background-origin: </h3>
+        <p></p>
+    </div>
+    <div class="bg-clip">
+        <h3>background<br>clip</h3>
+        <p></p>
+    </div>
+</body>
+</html>

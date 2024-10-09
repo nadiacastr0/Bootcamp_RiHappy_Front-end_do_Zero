@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores e Agrupamento CSS</title>
+    <style>
+        *{
+            background-color: #5d2417;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* Agrupamento de Seletores: O agrupamento de seletores é usado quando você quer aplicar o mesmo estilo a vários elementos,
+         usando uma lista separada por vírgulas.*/
+        h1, h2, p {
+            color: #c57d56;
+        }
+
+        /* Combinador Descendente: Aplica o estilo a elementos que estão dentro de outro elemento, independentemente de sua profundidade hierárquica.*/
+        div p {
+            font-style: italic;
+        }
+
+        /* Combinador Filho: Aplica o estilo a elementos que são filhos diretos de outro elemento.*/
+        div > p {
+            font-weight: bold;
+        }
+
+        /* Combinador de Irmão Adjacente:  Aplica o estilo ao primeiro elemento que aparece imediatamente após outro.*/
+        h1 + p {
+            color: red;
+        }
+
+        /* Combinador de Irmãos Gerais: Aplica o estilo a todos os elementos que são irmãos de outro, aparecendo depois dele.*/
+        h2 ~ p {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p style="display: flex; justify-content: center; font-weight: bold; font-size: larger; color: #f2f2f2;">ESTUDANDO FORMAS DE COMBINADORES</p>
+
+    <!-- Agrupamento de Seletores: h1, h2, p -->
+    <h1>Este é um título H1</h1>
+    <h2>Este é um subtítulo H2</h2>
+    <p>Este é um parágrafo estilizado pelo agrupamento.</p>
+
+    <!-- Combinador Descendente e Combinador Filho -->
+    <div>
+        <p>Este parágrafo está dentro de uma div e é um filho direto (bold e itálico).</p>
+        <section>
+            <p>Este parágrafo está dentro de uma section que está dentro de uma div (apenas itálico).</p>
+        </section>
+    </div>
+
+    <!-- Combinador de Irmão Adjacente -->
+    <h1>Título H1</h1>
+    <p>Este parágrafo vem logo após o H1 e está estilizado em vermelho.</p>
+
+    <!-- Combinador de Irmãos Gerais -->
+    <h2>Título H2</h2>
+    <p>Este parágrafo é um irmão geral do H2 e está sublinhado.</p>
+    <p>Outro parágrafo sublinhado pois também é irmão do H2.</p>
+
+</body>
+</html>

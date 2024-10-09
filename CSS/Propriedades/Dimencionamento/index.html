@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prop Dimencionamento</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h2 {
+        color: #4CAF50;
+    }
+    .example {
+        margin-bottom: 40px;
+    }
+    .box {
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    /* Width and Height */
+    .box1 {
+        width: 300px;
+        height: 200px;
+    }
+    /* Min/Max Width and Height */
+    .box2 {
+        width: 50%;
+        min-width: 100px;
+        max-width: 500px;
+        height: 100px;
+        max-height: 200px;
+    }
+    /* Box-sizing */
+    .box3 {
+        width: 300px;
+        padding: 10px;
+        border: 5px solid black;
+        box-sizing: border-box;
+    }
+    /* Aspect Ratio */
+    .box4 {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-color: lightblue;
+    }
+    /* Viewport Units */
+    .box5 {
+        width: 50vw;
+        height: 50vh;
+        background-color: lightcoral;
+    }
+</style>
+</head>
+<body>
+<h1>Propriedades de Dimencionamento</h1>
+
+<div class="example">
+    <h2>1. Width e Height / Largura e Altura</h2>
+    <div class="box box1">Width: 300px, Height: 200px</div>
+</div>
+
+<div class="example">
+    <h2>2. Min/Max Width e Height</h2>
+    <div class="box box2">Min-width: 100px, Max-width: 500px, Min-height: 100px, Max-height: 200px</div>
+</div>
+
+<div class="example">
+    <h2>3. Box-sizing: border-box</h2>
+    <div class="box box3">Width: 300px, Padding: 10px, Border: 5px</div>
+</div>
+
+<div class="example">
+    <h2>4. Aspect Ratio (16:9)</h2>
+    <div class="box box4"></div>
+</div>
+
+<div class="example">
+    <h2>5. Viewport Units (vw, vh)</h2>
+    <div class="box box5">50vw x 50vh</div>
+</div>
+
+</body>
+</html>

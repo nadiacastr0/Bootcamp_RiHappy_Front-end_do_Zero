@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 5px solid #8A2BE2;
+            background-color: black;
+        }
+    
+        img{
+            width: 100%;
+            height: 100%;
+            /* border: 5px solid #000000; */
+        }
+        
+        #contain{
+            object-fit: contain;
+        }
+    
+        #cover{
+            object-fit: cover;
+        }
+        
+        #none{
+            object-fit: none;
+        }
+    
+        #scale-down{
+            object-fit: scale-down;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+
+    <code>object-fit: fill;</code> (padrão)
+    <div><img src="https://i.pinimg.com/564x/24/a3/a7/24a3a7b427ebcd6c5098f74e572d772b.jpg" alt="" id="fill"></div>
+
+    <code>object-fit: contain;</code>
+    <div><img src="https://i.pinimg.com/564x/24/a3/a7/24a3a7b427ebcd6c5098f74e572d772b.jpg" alt="" id="contain"></div>
+
+    <code>object-fit: cover;</code>
+    <div><img src="https://i.pinimg.com/564x/24/a3/a7/24a3a7b427ebcd6c5098f74e572d772b.jpg" alt="" id="cover"></div>
+
+    <code>object-fit: none;</code>
+    <div><img src="https://i.pinimg.com/564x/24/a3/a7/24a3a7b427ebcd6c5098f74e572d772b.jpg" alt="" id="none"></div>
+
+    <code>object-fit: scale-down;</code>
+    <div><img src="https://i.pinimg.com/564x/24/a3/a7/24a3a7b427ebcd6c5098f74e572d772b.jpg" alt="" id="scale-down"></div>
+</body>
+</html>

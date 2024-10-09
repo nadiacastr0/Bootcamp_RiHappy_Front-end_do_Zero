@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prop Espacamento</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h2 {
+        color: #4CAF50;
+    }
+    .example {
+        margin-bottom: 40px;
+    }
+    .box {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+    /* Padding Example */
+    .box1 {
+        padding: 20px;
+        background-color: lightblue;
+    }
+    /* Margin Example */
+    .box2 {
+        margin: 20px;
+        padding: 10px;
+        background-color: lightgreen;
+    }
+    /* Border Example */
+    .box3 {
+        border: 3px dashed red;
+        padding: 10px;
+    }
+    /* Gap Example (for Grid) */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .grid-item {
+        background-color: lightcoral;
+        padding: 10px;
+        text-align: center;
+    }
+    /* Gap Example (for Flexbox) */
+    .flex-container {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .flex-item {
+        background-color: lightyellow;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>Propriedades de Espaçamento em CSS</h1>
+
+<div class="example">
+    <h2>1. Padding</h2>
+    <div class="box box1">Padding: 20px (espaço interno entre o conteúdo e as bordas do elemento)</div>
+</div>
+
+<div class="example">
+    <h2>2. Margin</h2>
+    <div class="box box2">Margin: 20px (espaço externo entre este elemento e outros ao redor)</div>
+</div>
+
+<div class="example">
+    <h2>3. Border</h2>
+    <div class="box box3">Border: 3px dashed red (borda visível ao redor do elemento)</div>
+</div>
+
+<div class="example">
+    <h2>4. Gap (Grid)</h2>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+    </div>
+    <p>Gap de 20px entre os itens do grid</p>
+</div>
+
+<div class="example">
+    <h2>5. Gap (Flexbox)</h2>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <p>Gap de 15px entre os itens do flexbox</p>
+</div>
+
+</body>
+</html>

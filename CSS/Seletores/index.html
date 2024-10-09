@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+    <style>
+        /* Seletor de Tag */
+        p {
+            color: darkviolet;
+            font-size: 18px;
+        }
+
+        /* Seletor de ID */
+        #meuID {
+            background-color: cornflowerblue;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Seletor de Classe */
+        .minhaClasse {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Seletor Universal */
+        * {
+            font-family: Arial, sans-serif;
+            background-color:rgb(17, 17, 17);
+        }
+
+        /* Seletor de Atributo */
+        [type="text"] {
+            border: 2px solid rgb(27, 147, 168);
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Seletor de Tag -->
+    <p>Este é um parágrafo estilizado pelo seletor de tag.</p>
+
+    <!-- Seletor de ID -->
+    <div id="meuID">Este é um elemento estilizado pelo seletor de ID.</div>
+
+    <!-- Seletor de Classe -->
+    <p class="minhaClasse">Este é um parágrafo estilizado pelo seletor de classe.</p>
+
+    <!-- Seletor de Atributo -->
+    <input type="text" placeholder="Campo de texto estilizado pelo seletor de atributo">
+
+</body>
+</html>
